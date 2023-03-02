@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  width: auto;
+  height: auto;
+  border: 3px white;
+}
+
+body, html {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #F6CEF5;
+}
+
+.container1{
+  display: inline-flex;
+  align-items: center;
+
+}
+
+.container1 div{
+  background-color: #CEF6CE; 
+/*  lightgreen*/
+  margin: 35px;
+  padding: 30px;
+}
+
+.flexParent {
+  display: flex;
+}
+
+.flexParent div {
+  background-color: #FE2E9A; 
+/*  hotpink*/
+  margin: 30px;
+  padding: 35px;
+}
+
+.flexParent > div {
+  background-color: #CEF6CE; 
+/*  lightgreen*/
+}
+
+.flexParent > div > p {
+}
+
+.flexParent > div > p:first-child {
+  text-decoration: plain;
+  font-weight: bold;
+}
+
+p + p {
+  margin-top: 30px;
+}
+
+h1 + p {
+
+}
+
+h1, a:visited, a:active {
+  text-decoration: underline;
+  color: #000000;
+}
+
+a:hover {
+  text-decoration: line-through;
+}
